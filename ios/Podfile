@@ -8,6 +8,8 @@ target 'stripe_payment_mobile' do
 
   use_react_native!(:path => config["reactNativePath"])
 
+  pod 'tipsi-stripe', :path => '../node_modules/tipsi-stripe'
+
   target 'stripe_payment_mobileTests' do
     inherit! :complete
     # Pods for testing
