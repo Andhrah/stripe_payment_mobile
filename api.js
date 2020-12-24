@@ -10,8 +10,7 @@ export const purchase = async (amount, tokenId, accessToken) => {
   };
   try {
     console.log(body);
-    const { data } = await axios
-      .post('http://localhost:8000/api/purchase', body, { headers });
+    const { data } = await axios.post(' https://939802325b9d.ngrok.io/api/purchase/', body, { headers });
     return data;
   }
   catch (error) {
